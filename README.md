@@ -14,3 +14,13 @@ There are 2 folders: backend and frontend</br>
 open 2 powershells then go into each folder by</br>
 run cd frontend and cd backend</br>
 then run npm run dev in both frontend and backend</br>
+
+# Tests
+
+To test the function, you can first surf through the web, try the dark/light mode button and check on each book by clicking on the book you interested. Next thing to test is to register/sign up an account and sign in using the account that just created. After that, you can test to change the profile by clicking on your account name on the top right and select "User Profile" then change the contents in it then check if it's working.
+
+Next thing to be tested is the whole buying/ordering books function. You can put the book on to a cart by clicking on add to cart button for the book you like. Then proceed throughout the page and fill in the mandatory information and press "place order" button. After that the website will lead the user to the order detail page where the user can check the shipping and payment status. There will also be a pay by paypal button and credit card payment button on the right side which linked to the paypal. However, in this case just press on the test pay button is sufficient.
+
+# Future works
+
+This version of TypeScript BookStore is enough to be working. However, there are still room for improvement.</br>The Side tab which display category of the book and filter for each category can implemented. </br>"Todays deal", "Gifts" and "On Sale" Tab can be implemented. </br>More way of payment could be added.</br> and etc.
