@@ -8,9 +8,9 @@ This bookstore project aim for the book lover who collect physical books like no
 
 # Instructions
 
-Clone git to your local directory
-run npm i to install essential components
-There are 2 folders: backend and frontend
-open 2 powershells then go into each folder by
-run cd frontend and cd backend
-then run npm run dev in both frontend and backend
+Clone git to your local directory</br>
+run npm i to install essential components</br>
+There are 2 folders: backend and frontend</br>
+open 2 powershells then go into each folder by</br>
+run cd frontend and cd backend</br>
+then run npm run dev in both frontend and backend</br>
