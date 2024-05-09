@@ -9,11 +9,12 @@ This bookstore project aim for the book lover who collect physical books like no
 # Instructions
 
 Clone git to your local directory</br>
-run ```npm i``` to install essential components</br>
 There are 2 folders: backend and frontend</br>
 open 2 powershells then go into each folder by</br>
-run cd frontend and cd backend</br>
-then run npm run dev in both frontend and backend</br>
+run ```cd frontend``` and ```cd backend```</br>
+run ```npm i``` in both folders to install essential components</br>
+then run ```npm run dev``` in both frontend and backend</br>
+after that user can proceed to testing the web application
 
 # Tests
 
