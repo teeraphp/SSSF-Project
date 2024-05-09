@@ -7,13 +7,6 @@ import { seedRouter } from './routers/seedRouter'
 import { userRouter } from './routers/userRouter'
 import { orderRouter } from './routers/orderRouter'
 import { keyRouter } from './routers/keyRouter'
-import typeDefs from './schemas/index'
-import resolvers from './resolvers/index'
-import { ApolloServer } from 'apollo-server-express'
-import {
-  ApolloServerPluginLandingPageLocalDefault,
-  ApolloServerPluginLandingPageProductionDefault,
-} from 'apollo-server-core'
 
 dotenv.config()
 
@@ -29,39 +22,12 @@ mongoose
   })
 
 const app = express()
-/*
 app.use(
   cors({
     credentials: true,
     origin: ['http://localhost:5173'],
   })
-)*/
-app.use(cors())
-
-const server = new ApolloServer({
-  typeDefs,
-  resolvers,
-  plugins: [
-    process.env.ENVIRONMENT === 'production'
-      ? ApolloServerPluginLandingPageProductionDefault({
-          graphRef: 'my-graph-id@my-graph-variant',
-          footer: false,
-        })
-      : ApolloServerPluginLandingPageLocalDefault({ footer: false }),
-  ],
-})
-
-const PORT = 4000
-
-async function startServer() {
-  await server.start()
-  server.applyMiddleware({ app: app as any, path: '/graphql' })
-
-  app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`)
-    console.log(`GraphQL path is http://localhost:${PORT}/graphql`)
-  })
-}
+)
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
@@ -71,10 +37,8 @@ app.use('/api/users', userRouter)
 app.use('/api/orders', orderRouter)
 app.use('/api/seed', seedRouter)
 app.use('/api/keys', keyRouter)
-/*
+
+const PORT = 4000
 app.listen(PORT, () => {
   console.log(`server started at http://localhost:${PORT}`)
-  console.log(`GraphQL path is http://localhost:${PORT}/graphql`)
-})*/
-
-startServer()
+})

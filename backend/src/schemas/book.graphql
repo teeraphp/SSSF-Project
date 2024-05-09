@@ -1,14 +1,10 @@
 type Book {
-  name: String!
+  id: ID!
+  title: String!
   slug: String!
-  image: String!
-  category: String!
-  brand: String!
   price: Float!
-  countInStock: Float!
   description: String!
-  rating: Float!
-  numReviews: Float!
+  category: Category!
 }
 
 type Query {
@@ -18,27 +14,18 @@ type Query {
 
 type Mutation {
   createBook(
-    name: String!
+    title: String!
     slug: String!
-    image: String!
-    category: String!
-    brand: String!
     price: Float!
-    countInStock: Float!
     description: String!
-    rating: Float!
-    numReviews: Float!
+    category: String!
   ): Book!
   updateBook(
-    name: String!
-    slug: String!
-    image: String!
-    category: String!
-    brand: String!
-    price: Float!
-    countInStock: Float!
-    description: String!
-    rating: Float!
-    numReviews: Float!
+    id: ID!
+    title: String
+    slug: String
+    price: Float
+    description: String
+    category: String
   ): Book!
 }
