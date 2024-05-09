@@ -6,15 +6,33 @@ Server-side Scripting Frameworks Project - This project is about bookstore web a
 
 This bookstore project aim for the book lover who collect physical books like novel, comics, documentaries, and many more. With the ease of use by just clicking and search for any book in the store the customer can surf through stuff and find their favorite book with ease as well as place the order and safely wait for the order to proceed.
 
-# Instructions
+# Getting Started
 
-Clone git to your local directory</br>
-There are 2 folders: backend and frontend</br>
-open 2 powershells then go into each folder by</br>
-run ```cd frontend``` and ```cd backend```</br>
+### installing
+```git clone https://github.com/teeraphp/SSSF-Project.git```</br>
+frontend</br>
+```cd frontend```</br>
+```npm install```</br>
+backend
+```cd backend</br>
+npm install```</br>
 run ```npm i``` in both folders to install essential components</br>
 then run ```npm run dev``` in both frontend and backend</br>
 after that user can proceed to testing the web application
+
+# Main Functions
+
+- surf through web app to find books/products
+- view books/products in detail
+- add or remove books/products from cart
+- buy/place order
+- pay by paypal
+- check order detail
+
+# Target Audience
+
+- Booklover who read and buy a lot of books, they will find books more easily using this web application
+- Anyone who is interested in books or want to try something new to read
 
 # Tests
 
