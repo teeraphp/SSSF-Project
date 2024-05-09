@@ -1,9 +1,9 @@
 export default {
   Query: {
-    users: async (parent: any, args: any, { models }: any) => {
+    user: async (parent: any, args: any, { models }: any) => {
       return await models.User.find()
     },
-    user: async (parent: any, { id }: any, { models }: any) => {
+    userById: async (parent: any, { id }: any, { models }: any) => {
       return await models.User.findById(id)
     },
   },
