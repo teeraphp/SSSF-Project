@@ -9,7 +9,7 @@ This bookstore project aim for the book lover who collect physical books like no
 # Instructions
 
 Clone git to your local directory</br>
-run npm i to install essential components</br>
+run ```npm i``` to install essential components</br>
 There are 2 folders: backend and frontend</br>
 open 2 powershells then go into each folder by</br>
 run cd frontend and cd backend</br>
@@ -24,3 +24,11 @@ Next thing to be tested is the whole buying/ordering books function. You can put
 # Future works
 
 This version of TypeScript BookStore is enough to be working. However, there are still room for improvement. For Example:</br>The Side tab which display category of the book and filter for each category can implemented. </br>"Todays deal", "Gifts" and "On Sale" Tab can be implemented. </br>More way of payment could be added.</br> and etc.
+
+# Feedback
+
+forms.gle/zsaEdYenhGUVCMPw8
+
+# Feedback Responses
+
+docs.google.com/spreadsheets/d/1I5iuwrC19G33_Kxq_5fXuM2QCV4IvykAS6PvF0OWiZ8/edit?usp=sharing
