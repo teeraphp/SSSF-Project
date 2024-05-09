@@ -24,7 +24,3 @@ Next thing to be tested is the whole buying/ordering books function. You can put
 # Future works
 
 This version of TypeScript BookStore is enough to be working. However, there are still room for improvement. For Example:</br>The Side tab which display category of the book and filter for each category can implemented. </br>"Todays deal", "Gifts" and "On Sale" Tab can be implemented. </br>More way of payment could be added.</br> and etc.
-
-# Feedback Link
-
-https://forms.gle/zsaEdYenhGUVCMPw8
