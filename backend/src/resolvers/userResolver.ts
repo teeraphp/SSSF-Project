@@ -1,10 +1,15 @@
+//import { User } from "../interfaces/User";
+import userModel from '../models/userModel'
+
 export default {
   Query: {
-    user: async (parent: any, args: any, { models }: any) => {
-      return await models.User.find()
+    users: async () => {
+      return await userModel.find()
     },
-    userById: async (parent: any, { id }: any, { models }: any) => {
-      return await models.User.findById(id)
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    userById: async (_parent: undefined, args: any) => {
+      return await userModel.findById(args.id)
     },
   },
   Mutation: {
