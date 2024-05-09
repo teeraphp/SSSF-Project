@@ -1,4 +1,4 @@
-//import { User } from "../interfaces/User";
+import User from '../interfaces/User'
 import userModel from '../models/userModel'
 
 export default {
@@ -13,27 +13,15 @@ export default {
     },
   },
   Mutation: {
-    createUser: async (parent: any, { name, email }: any, { models }: any) => {
-      const user = new models.User({
-        name,
-        email,
-      })
-      await user.save()
-      return user
+    createUser: async (_parent: undefined, args: User) => {
+      const newUser = new userModel(args)
+      return await newUser.save()
     },
-    updateUser: async (
-      parent: any,
-      { id, name, email }: any,
-      { models }: any
-    ) => {
-      return await models.User.findByIdAndUpdate(
-        id,
-        { name, email },
-        { new: true }
-      )
+    updateUser: async (_parent: undefined, args: User) => {
+      return await userModel.findByIdAndUpdate(args.id, args, { new: true })
     },
-    deleteUser: async (parent: any, { id }: any, { models }: any) => {
-      return await models.User.findByIdAndDelete(id)
+    deleteUser: async (_parent: undefined, args: User) => {
+      return await userModel.findByIdAndDelete(args.id)
     },
   },
 }

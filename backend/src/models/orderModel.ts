@@ -79,3 +79,4 @@ export class Order {
 }
 
 export const OrderModel = getModelForClass(Order)
+export default OrderModel

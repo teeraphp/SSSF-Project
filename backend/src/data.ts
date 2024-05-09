@@ -51,6 +51,18 @@ export const sampleProducts: Product[] = [
     rating: 4.7,
     numReviews: 12,
   },
+  {
+    name: 'test',
+    slug: 'test',
+    image: '../images/test.jpg',
+    category: 'test',
+    brand: 'test',
+    price: 999,
+    countInStock: 999,
+    description: 'test',
+    rating: 5.0,
+    numReviews: 99,
+  },
 ]
 
 export const sampleUsers: User[] = [
