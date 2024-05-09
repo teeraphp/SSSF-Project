@@ -28,8 +28,8 @@ This version of TypeScript BookStore is enough to be working. However, there are
 
 # Feedback
 
-forms.gle/zsaEdYenhGUVCMPw8
+https://forms.gle/Awftnzh9VwQptmg77
 
 # Feedback Responses
 
-docs.google.com/spreadsheets/d/1I5iuwrC19G33_Kxq_5fXuM2QCV4IvykAS6PvF0OWiZ8/edit?usp=sharing
+https://docs.google.com/spreadsheets/d/1I5iuwrC19G33_Kxq_5fXuM2QCV4IvykAS6PvF0OWiZ8/edit#gid=1079973492
