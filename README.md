@@ -49,8 +49,12 @@ cd backend
 npm run dev
 ```
 
-Access the application through your web browser at ```http://localhost:5173```.
-If products didn't appear, try ```http://localhost:4000/api/seed```, then go back to homepage and refresh again.
+Access the application through your web browser at ```http://localhost:5173```.</br>
+If products didn't appear, try ```http://localhost:4000/api/seed```, then go back to homepage and refresh again.</br>
+
+### Graphql
+
+For graphql, you'll need to run backend server,</br> then open ```http://localhost:4000/graphql``` to test the graphql functions.
 
 # Main Functions
 
