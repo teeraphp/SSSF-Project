@@ -9,16 +9,44 @@ This bookstore project aim for the book lover who collect physical books like no
 # Getting Started
 
 ### installing
+
+Clone the repository and install the dependencies:
 ```git clone https://github.com/teeraphp/SSSF-Project.git```</br>
 frontend</br>
-```cd frontend```</br>
-```npm install```</br>
+```
+cd frontend
+npm install
+```
 backend
-```cd backend</br>
-npm install```</br>
-run ```npm i``` in both folders to install essential components</br>
-then run ```npm run dev``` in both frontend and backend</br>
-after that user can proceed to testing the web application
+```
+cd backend
+npm install
+```
+
+### configuring
+
+Set up the necessary environment variables in a ```.env``` file in the project root:
+```
+MONGODB_URI=yourmongodbdatabase
+JWT_SECRET=somethingsecret
+PAYPAL_CLIENT_ID=sb
+```
+
+### Running the Application
+
+Start the frontend server with:
+```
+cd frontend
+npm run dev
+```
+
+start the backend server with:
+```
+cd backend
+npm run dev
+```
+
+Access the application through your web browser at ```http://localhost:5173```.
 
 # Main Functions
 
