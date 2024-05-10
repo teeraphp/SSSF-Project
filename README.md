@@ -50,6 +50,7 @@ npm run dev
 ```
 
 Access the application through your web browser at ```http://localhost:5173```.
+If products didn't appear, try ```http://localhost:4000/api/seed```, then go back to homepage and refresh again.
 
 # Main Functions
 
