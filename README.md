@@ -49,7 +49,12 @@ cd backend
 npm run dev
 ```
 
-Access the application through your web browser at ```http://localhost:5173```.
+Access the application through your web browser at ```http://localhost:5173```.</br>
+If products didn't appear, try ```http://localhost:4000/api/seed```, then go back to homepage and refresh again.</br>
+
+### Graphql
+
+For graphql, you'll need to run backend server,</br> then open ```http://localhost:4000/graphql``` to test the graphql functions.
 
 # Main Functions
 
@@ -65,15 +70,22 @@ Access the application through your web browser at ```http://localhost:5173```.
 - Booklover who read and buy a lot of books, they will find books more easily using this web application
 - Anyone who is interested in books or want to try something new to read
 
-# Tests
+# Test Instructions
 
-To test the function, you can first surf through the web, try the dark/light mode button and check on each book by clicking on the book you interested. Next thing to test is to register/sign up an account and sign in using the account that just created. After that, you can test to change the profile by clicking on your account name on the top right and select "User Profile" then change the contents in it then check if it's working.
+Register and Login to the account.</br>
+Find interesting book and click on it for more detail.</br>
+add to cart and proceed to order section.</br>
+fill in the informtaion through the order placement section.</br>
+Try "test pay" button to see if the payment go through properly.</br>
+after that, go back to homepage by clicking on the website name,</br>
+and click on the username, then select the Order History button to see the order history.</br>
 
-Next thing to be tested is the whole buying/ordering books function. You can put the book on to a cart by clicking on add to cart button for the book you like. Then proceed throughout the page and fill in the mandatory information and press "place order" button. After that the website will lead the user to the order detail page where the user can check the shipping and payment status. There will also be a pay by paypal button and credit card payment button on the right side which linked to the paypal. However, in this case just press on the test pay button is sufficient.
+Next, try to change information in the profile by go to the profile page,</br>
+then, log out and log in again using both old information and new information.</br>
 
 # Future works
 
-This version of TypeScript BookStore is enough to be working. However, there are still room for improvement. For Example:</br>The Side tab which display category of the book and filter for each category can implemented. </br>"Todays deal", "Gifts" and "On Sale" Tab can be implemented. </br>More way of payment could be added.</br> and etc.
+This version of TypeScript BookStore is enough to be working. However, there are still room for improvement.</br> For Example:</br>The Side tab which display category of the book and filter for each category as well as search bar can implemented. </br>"Todays deal", "Gifts" and "On Sale" Tab can be implemented. </br>More way of payment could be added.</br> and etc.
 
 # Feedback
 
