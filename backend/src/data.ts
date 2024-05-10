@@ -1,8 +1,8 @@
 import { User } from './models/userModel'
-import { Product } from './models/productModel'
+//import { Product } from './models/productModel'
 import bcrypt from 'bcryptjs'
 
-export const sampleProducts: Omit<Product, '_id'>[] = [
+export const sampleProducts = [
   {
     name: 'Harry Potter',
     slug: 'harry-potter',
