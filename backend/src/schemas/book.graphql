@@ -1,5 +1,5 @@
 type Book {
-  id: ID!
+  _id: ID!
   name: String!
   slug: String!
   image: String!
