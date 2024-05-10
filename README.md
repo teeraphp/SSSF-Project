@@ -11,7 +11,9 @@ This bookstore project aim for the book lover who collect physical books like no
 ### installing
 
 Clone the repository and install the dependencies:</br>
-```git clone https://github.com/teeraphp/SSSF-Project.git```</br>
+```
+git clone https://github.com/teeraphp/SSSF-Project.git
+```
 
 frontend</br>
 ```
