@@ -36,5 +36,4 @@ export class Product {
 }
 
 export const ProductModel = getModelForClass(Product)
-
 export default ProductModel

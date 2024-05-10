@@ -1,7 +1,8 @@
 import cors from 'cors'
 import dotenv from 'dotenv'
-import express from 'express'
+import express, { Request, Response } from 'express'
 import mongoose from 'mongoose'
+import path from 'path'
 import { productRouter } from './routers/productRouter'
 import { seedRouter } from './routers/seedRouter'
 import { userRouter } from './routers/userRouter'
@@ -12,7 +13,7 @@ import resolvers from './resolvers/index'
 import { ApolloServer } from 'apollo-server-express'
 import {
   ApolloServerPluginLandingPageLocalDefault,
-  ApolloServerPluginLandingPageProductionDefault,
+  //ApolloServerPluginLandingPageProductionDefault,
 } from 'apollo-server-core'
 
 dotenv.config()
@@ -42,19 +43,20 @@ const server = new ApolloServer({
   typeDefs,
   resolvers,
   plugins: [
-    process.env.ENVIRONMENT === 'production'
+    /*process.env.ENVIRONMENT === 'production'
       ? ApolloServerPluginLandingPageProductionDefault({
           graphRef: 'my-graph-id@my-graph-variant',
           footer: false,
         })
-      : ApolloServerPluginLandingPageLocalDefault({ footer: false }),
+      :*/ ApolloServerPluginLandingPageLocalDefault({ footer: false }),
   ],
 })
 
-const PORT = 4000
+const PORT: number = parseInt((process.env.PORT || '4000') as string, 10)
 
 async function startServer() {
   await server.start()
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   server.applyMiddleware({ app: app as any, path: '/graphql' })
 
   app.listen(PORT, () => {
@@ -76,5 +78,10 @@ app.listen(PORT, () => {
   console.log(`server started at http://localhost:${PORT}`)
   console.log(`GraphQL path is http://localhost:${PORT}/graphql`)
 })*/
+
+app.use(express.static(path.join(__dirname, '../../frontend/dist')))
+app.get('*', (req: Request, res: Response) =>
+  res.sendFile(path.join(__dirname, '../../frontend/dist/index.html'))
+)
 
 startServer()

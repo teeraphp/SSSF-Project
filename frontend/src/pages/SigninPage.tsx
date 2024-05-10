@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { useContext, useEffect, useState } from 'react'
 import { Button, Container, Form } from 'react-bootstrap'
 import { Helmet } from 'react-helmet-async'
@@ -20,7 +21,7 @@ export default function SigninPage() {
 
   const { state, dispatch } = useContext(Store)
   const { userInfo } = state
-
+  // @ts-ignore because of the unknown type of signin
   const { mutateAsync: signin, isLoading } = useSigninMutation()
 
   const submitHandler = async (e: React.SyntheticEvent) => {

@@ -14,7 +14,7 @@ export default function PlaceOrderPage() {
   const navigate = useNavigate()
 
   const { state, dispatch } = useContext(Store)
-  const { cart, userInfo } = state
+  const { cart } = state
 
   const round2 = (num: number) => Math.round(num * 100 + Number.EPSILON) / 100 // 123.2345 => 123.23
 
@@ -25,6 +25,7 @@ export default function PlaceOrderPage() {
   cart.taxPrice = round2(0.15 * cart.itemsPrice)
   cart.totalPrice = cart.itemsPrice + cart.shippingPrice + cart.taxPrice
 
+  // @ts-expect-error because of the unknown type of createOrder
   const { mutateAsync: createOrder, isLoading } = useCreateOrderMutation()
 
   const placeOrderHandler = async () => {

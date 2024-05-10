@@ -1,4 +1,4 @@
-ModuleDetectionKind.exports = {
+module.exports = {
   env: {
     es2016: true,
     node: true,

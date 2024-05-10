@@ -16,6 +16,7 @@ export default function ProfilePage() {
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
 
+  // @ts-expect-error because of the unknown type of updateProfile
   const { mutateAsync: updateProfile, isLoading } = useUpdateProfileMutation()
 
   const submitHandler = async (e: React.SyntheticEvent) => {
