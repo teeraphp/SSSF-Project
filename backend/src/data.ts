@@ -2,9 +2,8 @@ import { User } from './models/userModel'
 import { Product } from './models/productModel'
 import bcrypt from 'bcryptjs'
 
-export const sampleProducts: Product[] = [
+export const sampleProducts: Omit<Product, '_id'>[] = [
   {
-    _id: '',
     name: 'Harry Potter',
     slug: 'harry-potter',
     image: '../images/p1.jpg',
@@ -17,7 +16,6 @@ export const sampleProducts: Product[] = [
     numReviews: 20,
   },
   {
-    _id: '',
     name: 'Percy Jackson',
     slug: 'percy-jackson',
     image: '../images/p2.jpg',
@@ -30,7 +28,6 @@ export const sampleProducts: Product[] = [
     numReviews: 5,
   },
   {
-    _id: '',
     name: 'The Hobbit',
     slug: 'the-hobbit',
     image: '../images/p3.jpg',
@@ -43,7 +40,6 @@ export const sampleProducts: Product[] = [
     numReviews: 15,
   },
   {
-    _id: '',
     name: 'The Hunger Games',
     slug: 'the-hunger-games',
     image: '../images/p4.jpg',
