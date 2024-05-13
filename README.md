@@ -6,6 +6,10 @@ Server-side Scripting Frameworks Project - This project is about bookstore web a
 
 This bookstore project aim for the book lover who collect physical books like novel, comics, documentaries, and many more. With the ease of use by just clicking and search for any book in the store the customer can surf through stuff and find their favorite book with ease as well as place the order and safely wait for the order to proceed.
 
+# Deployment
+
+https://sssf-project-deploy.onrender.com/
+
 # Getting Started
 
 ### installing
