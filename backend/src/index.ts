@@ -4,7 +4,7 @@ import express, { Request, Response } from 'express'
 import mongoose from 'mongoose'
 import path from 'path'
 import { productRouter } from './routers/productRouter'
-import { seedRouter } from './routers/seedRouter'
+//import { seedRouter } from './routers/seedRouter'
 import { userRouter } from './routers/userRouter'
 import { orderRouter } from './routers/orderRouter'
 import { keyRouter } from './routers/keyRouter'
@@ -71,7 +71,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use('/api/products', productRouter)
 app.use('/api/users', userRouter)
 app.use('/api/orders', orderRouter)
-app.use('/api/seed', seedRouter)
+//app.use('/api/seed', seedRouter)
 app.use('/api/keys', keyRouter)
 /*
 app.listen(PORT, () => {
