@@ -76,16 +76,16 @@ For graphql, you'll need to run backend server,</br> then open ```http://localho
 
 # Test Instructions
 
-Register and Login to the account.</br>
-Find interesting book and click on it for more detail.</br>
-add to cart and proceed to order section.</br>
-fill in the informtaion through the order placement section.</br>
-Try "test pay" button to see if the payment go through properly.</br>
-after that, go back to homepage by clicking on the website name,</br>
-and click on the username, then select the Order History button to see the order history.</br>
+-Register and Login to the account.</br>
+-Find interesting book and click on it for more detail.</br>
+-add to cart and proceed to order section.</br>
+-fill in the informtaion through the order placement section.</br>
+-Try "test pay" button to see if the payment go through properly.</br>
+-after that, go back to homepage by clicking on the website name,</br>
+-and click on the username, then select the Order History button to see the order history.</br>
 
-Next, try to change information in the profile by go to the profile page,</br>
-then, log out and log in again using both old information and new information.</br>
+-Next, try to change information in the profile by go to the profile page,</br>
+-then, log out and log in again using both old information and new information.</br>
 
 # Future works
 
